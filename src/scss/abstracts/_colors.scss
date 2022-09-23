@@ -1,3 +1,41 @@
 $colors: (
+    bluish: (
+        high-blue: hsl(207, 71%, 58%),
+        warm-blue: hsl(248, 64%, 56%),
+        royalty: hsl(250, 63%, 47%),
+        majestic-eggplant: hsl(257, 52%, 38%),
+        sea-tears: hsl(258, 82%, 45%),
+        lavender: hsl(259, 36%, 53%)
+    ),
+
+    yellowish: (
+        champagne-gold: hsl(37, 63%, 82%),
+        gold: hsl(41, 89%, 82%),
+        honey-bee: hsl(41, 93%, 82%),
+        creme-brule: hsl(41, 93%, 83%),
+        placebo-yellow: hsl(56, 68%, 95%)
+    ),
     
+    grayish: (
+        flint-rock: hsl(30, 1%, 58%),
+        silent-film: hsl(195, 4%, 64%),
+        over-the-moon: hsl(243, 42%, 78%),
+        silver-back: hsl(0, 1%, 80%)
+    ),
+
+    greenish: (
+        water-park: hsl(164, 41%, 52%)
+    ),
+    
+    blackish: (
+        black: hsl(0, 0%, 0%),
+        black-washed: hsl(30, 8%, 5%),
+        jet-black: hsl(240, 4%, 18%),
+        dark-charcoal: hsl(285, 4%, 19%)
+    ),
+
+    whitish: (
+        white: hsl(0, 0%, 100%),
+        doctor: hsl(45, 33%, 98%)
+    )
 );
