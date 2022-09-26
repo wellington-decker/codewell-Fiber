@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+
+button {
+  display: block;
+  font-family: $font-name;
+  text-align: center;
+  background: none;
+  margin: 1.25rem 0;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+}
+
+.start-trial__btn {
+  font-size: map-get($type-scale-small, 300);
+  font-weight: map-get($font-weights, bold);
+  color: map-get($white-variant, doctor);
+  background: map-get($blue-variant, royalty);
+  width: 100%;
+  border-radius: 5px;
+}
+
+.diversify-trial__btn {
+  font-size: map-get($type-scale-small, 300);
+  font-weight: map-get($font-weights, bold);
+  color: map-get($blue-variant, royalty);
+  background: map-get($white-variant, doctor);
+  width: 100%;
+  border-radius: 5px;
+}
+
+.view-portf__btn {
+  font-size: map-get($type-scale-small, 300);
+  font-weight: map-get($font-weights, bold);
+  color: map-get($blue-variant, royalty);
+  width: 100%;
+  border: 1px solid map-get($gray-variant, silver-back);
+  border-radius: 5px;
+}

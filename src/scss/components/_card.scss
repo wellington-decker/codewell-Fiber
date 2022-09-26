@@ -1,0 +1,11 @@
+@use '../base' as *;
+@use '../globals' as *;
+@use '../abstracts' as *;
+
+
+.card {
+    @include container-small;
+    border: 1px solid map-get($gray-variant , silver-back);
+    border-radius: 5px;
+}
+

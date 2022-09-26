@@ -1,0 +1,61 @@
+@use '../base' as *;
+@use '../abstracts/' as *;
+@use '../globals' as *;
+@use '../components/' as *;
+
+main {
+  background: map-get($yellow-variant , placebo-yellow);
+  @include container-small;
+  margin-bottom: 2rem;
+
+  .intro {
+    .intro-hero {
+      margin-top: -3.2rem;
+    }
+
+    .intro-text {
+      .rating {
+        display: none;  
+      }
+      
+      .intro-text__header {
+        font-size: map-get($type-scale-small, 800);
+        font-weight: map-get($font-weights, bold);
+      }
+
+      .intro-text__description {
+        color: map-get($black-variant, dark-charcoal);
+        font-size: map-get($type-scale-small, 300);
+      }
+
+      a.examples {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        text-align: center;
+        color: map-get($blue-variant, royalty);
+        font-weight: map-get($font-weights, bold);
+        margin: 1rem 0;
+      }
+
+      .intro-perks {
+        ul {
+          list-style: none;
+
+          li + li {
+            margin: 1rem 0;
+          }
+
+          li {
+            color: map-get($black-variant, dark-charcoal);
+            background: url(../../assets/Checkmark.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left: 1.85rem;
+
+          }
+        }
+      }
+    }
+  }
+}

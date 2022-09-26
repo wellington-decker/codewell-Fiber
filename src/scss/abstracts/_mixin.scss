@@ -1,0 +1,11 @@
+@mixin container-small {
+    padding: 2.25rem 1.5rem;
+    margin: 0 auto;
+    min-width: 19rem;
+    max-width: 35rem;
+}
+
+@mixin container-big {
+    padding: 4rem 7.5rem;
+    margin: 0 auto;
+}

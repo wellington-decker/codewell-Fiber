@@ -1,0 +1,40 @@
+@use "../base" as *;
+@use "../abstracts/" as *;
+@use "../globals" as *;
+
+.why-fiber {
+  @include container-small;
+
+  .why-fiber__intro {
+    color: map-get($blue-variant, royalty);
+    font-weight: map-get($font-weights, bold);
+    margin: 1rem 0;
+  }
+
+  .why-fiber__header {
+    font-size: map-get($type-scale-small, 700);
+    font-weight: map-get($font-weights, bold);
+    margin: 0.75rem 0;
+  }
+
+  .why-fiber__perks {
+    .fiber-perk__item {
+      .icon img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .fiber-perk__header {
+        font-size: map-get($type-scale-small, 300);
+        font-weight: map-get($font-weights, semi-bold);
+        margin: 0.75rem 0;
+      }
+
+      .fiber-perk__description {
+        color: map-get($black-variant, dark-charcoal);
+        font-size: map-get($type-scale-small, 300);
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

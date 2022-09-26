@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/scss/main.scss">
 </head>
 <body>
-    <header>
+    <header class="container header">
         <div class="logo">
             <p class="logo-text">Fiber</p>
         </div>
@@ -34,84 +34,160 @@
     </header>
     <main>
         <section class="intro">
-            <!-- <div class="intro-hero">
+            <div class="intro-hero">
                 <img src="assets\hero-Illustration.png" alt="an illustration">
-            </div> -->
+            </div>
             <div class="intro-text">
-                <!-- Rated 4.8/5 (234 reviews) -->
-                <h1 class="intro-text__header">
-                    Create your portfolio in minutes
-                </h1>
+                <div class="rating">
+                    <div class="five-star">
+                        <img src="assets/star.svg" alt="a star icon">
+                        <img src="assets/star.svg" alt="a star icon">
+                        <img src="assets/star.svg" alt="a star icon">
+                        <img src="assets/star.svg" alt="a star icon">
+                        <img src="assets/star.svg" alt="a star icon">
+                    </div>
+                    <p>Rated 4.8/5 (234 reviews)</p>
+                </div>
+                
+                <p class="intro-text__header"> Create your portfolio in minutes.</p>
                 <p class="intro-text__description">
                     With Fiber, you can setup your own personal porfolio in minutes with dozens of premade, beautiful templates.
                 </p>
-
+                <button type="button" class="start-trial__btn">Start Free Trial </button>
+                <a href="#"  class="examples">View Examples</a>
+                <div class="intro-perks">
+                    <ul class="intro-perk__items">
+                        <li class="intro-perk__item">No Credit Card Required</li>
+                        <li class="intro-perk__item">10 Free Templates</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
+    <section class="why-fiber">
+        <p class="why-fiber__intro">Why Fiber?</p>
+        <p class="why-fiber__header">A good porfolio means good employability.</p>
+        <div class="why-fiber__perks">
+            <div class="fiber-perk__item"> 
+                <div class="icon">
+                    <img src="assets/time.svg" alt="clock icon">
+                </div>
+                <p class="fiber-perk__header">Build in minutes</p>
+                <p class="fiber-perk__description">With a selection of premade templates you can build out  a porfolio in less than 10 minutes.</p>
+            </div>
+            <div class="fiber-perk__item"> 
+                <div class="icon">
+                    <img src="assets/code.svg" alt="angle brackets icon">
+                </div>
+                <p class="fiber-perk__header">Add custom CSS</p>
+                <p class="fiber-perk__description">Customize your personal portfolio even more with the ability to add your own custom CSS styles.</p>
+            </div>
+            <div class="fiber-perk__item"> 
+                <div class="icon">
+                    <img src="assets/allSizes.svg" alt="device icon">
+                </div>
+                <p class="fiber-perk__header"> Responsive </p>
+                <p class="fiber-perk__description">All Fiber templates are fully responsive to ensure the experience is seemless across all devices.</p>
+            </div>
+        </div>
+    </section>
+    <section class="diversify">
+        <div class="diversify-content">
+            <div class="diversify-text">
+                <p class="diversify-content__header">Diversify your portfolio.</p>
+                <p class="diversify-content__description">Create an even more impressive portfolio by creating case studies for your projects. Simply follow our step-by-guide.</p>
+                <button type="button" class="diversify-trial__btn">Start Free Trial</button>
+            </div>
+            <div class="diversify-image">
+                <div>
+                    <!-- <img src="assets/Page Image.png" alt="an image of a building"> -->
+                </div>
+            </div>
+        </div>
+        
 
+    </section>
+
+    <section class="card-slider">
+        <div class="card">
+            <div class="card-credential">
+                <img src="assets/User Avatar.svg" alt="Sarah's photograph">
+                <div class="deets_">
+                    <p class="username">Sarah Andrews</p>
+                    <p class="revenue-amount">$100k in revenue</p>
+                </div>    
+            </div>
+            <p class="comment"> Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfoliohas attracted a lot of clients and made me more than $100k.</p>
+            <button type="button" class="view-portf__btn">View Sarah's Portfolio</button>
+        </div>
+        <div class="card">
+            <div class="card-credential">
+                <img src="assets/User Avatar 2.svg" alt="Matthew's photograph">
+                <div class="deets_">
+                    <p class="username">Matthew Higgins</p>
+                    <p class="revenue-amount">$20k in revenue</p>
+                </div>    
+            </div>
+            <p class="comment">I have been getting a lot of leads ever since I used Fiber's premade templates, now I just need to work on my case studies and I'll be ready to go!</p>
+            <button type="button" class="view-portf__btn">View Matthew's Portfolio</button>
+        </div>
+        <div class="card">
+            <div class="card-credential">
+                <img src="assets/User Avatar 32.svg" alt="Janice's photograph">
+                <div class="deets_">
+                    <p class="username">Janice Dave</p>
+                    <p class="revenue-amount">$30k in revenue</p>
+                </div>    
+            </div>
+            <p class="comment">I only just started freelancing this year and I have already made more than I ever did in my full-time job. The templates are so amazing.</p>
+            <button type="button" class="view-portf__btn">View Janice's Portfolio</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="about-fiber__footer">
+            <p class="footer-logo__header">Fiber</p>
+            <p class="about-fiber">With Fiber, you can setup your own personal portfolioin minutes with dozens of premade, beautiful templates.</p>
+            <p class="made-in">Made with <span class="love-icon"><i class="ph-heart-fill"></i></span> in the Netherlands.</p>
+        </div>
+        
+        <div class="footer-nav">
+            <div class="footer-items">
+                <p class="nav-header">Sitemap</p>
+                <ul class="footer-nav__items">
+                    <li class="footer-nav__item"><a href="#">Homepage</a></li>
+                    <li class="footer-nav__item"><a href="#">Pricing</a> </li>
+                    <li class="footer-nav__item"><a href="#">Testimonials</a></li>
+                    <li class="footer-nav__item"><a href="#">Features</a></li>
+                </ul>
+            </div>
+            <div class="footer-items"">
+                <p class="nav-header">Resources</p>
+                <ul class="footer-nav__items">
+                    <li class="footer-nav__item"><a href="#">Support</a></li>
+                    <li class="footer-nav__item"><a href="#">Contact</a></li>
+                    <li class="footer-nav__item"><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-items"">
+                <p class="nav-header">Company</p>
+                <ul class="footer-nav__items">
+                    <li class="footer-nav__item"><a href="#">About</a></li>
+                    <li class="footer-nav__item"><a href="#">Customers</a></li>
+                    <li class="footer-nav__item"><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-items"">
+                <p class="nav-header">Portfolios </p>
+                <ul class="footer-nav__items">
+                    <li class="footer-nav__item"><a href="#">Sarah Andrews</a></li>
+                    <li class="footer-nav__item"><a href="#">Matthew Higgins</a></li>
+                    <li class="footer-nav__item"><a href="#">Janice Dave</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
    
-    
-    
-    Start Free Trial View Examples
-    No Credit Card Required 10 Free Templates
-
-    Why Fiber?
-    A good porfolio means good employability.
-
-    Build in minutes
-    With a selection of premade templates you can build out  a porfolio in less than 10 minutes.
-
-    Add custom CSS
-    Customize your personal portfolio even more with the ability to add your own custom CSS styles.
-
-    Responsive 
-    All Fiber templates are fully responsive to ensure the experience is seemless across all devices.
-
-    Diversify your portfolio.
-    Create an even more impressive portfolio by creating case studies for your projects. Simply follow our step-by-guide.
-    Start Free Trial
-
-    Sarah Andrews 
-    $100k in revenue
-    Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfoliohas attracted a lot of clients and made me more than $100k.
-    View Sarah's Portfolio
-
-    Matthew Higgins
-    $20k in revenue
-    I have been getting a lot of leads ever since I used Fiber's premade templates, now I just need to work on my case studies and I'll be ready to go!
-    View Matthew's Portfolio
-
-    Janice Dave 
-    $30k in revenue
-    I only just started freelancing this year and I have already made more than I ever did in my full-time job. The templates are so amazing.
-    View Janice's Portfolio
-
-    Fiber 
-    With Fiber, you can setup your own personal portfolioin minutes with dozens of premade, beautiful templates.
-
-    Made with in the Netherlands.
-
-    Sitemap
-    Homepage
-    Pricing
-    Testimonials
-    Features
-    
-    Resources 
-    Support
-    Contact
-    FAQ
-
-    Company
-    About 
-    Customers
-    Blog
-
-    Portfolios 
-    Sarah Andrews
-    Matthew Higgins
-    Janice Dave
 
     <script src="https://unpkg.com/phosphor-icons"></script>
 </body>

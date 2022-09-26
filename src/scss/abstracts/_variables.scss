@@ -1,0 +1,9 @@
+@use '../globals/colors' as *;
+
+$blue-variant: map-get($colors, bluish);
+$yellow-variant: map-get($colors, yellowish);
+$gray-variant: map-get($colors, grayish);
+$green-variant: map-get($colors, greenish);
+$black-variant: map-get($colors, blackish);
+$white-variant: map-get($colors, whitish);
+

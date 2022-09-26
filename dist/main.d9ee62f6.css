@@ -1,5 +1,280 @@
-.desktop-nav {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+button {
+  display: block;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  background: none;
+  margin: 1.25rem 0;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+}
+
+.start-trial__btn {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(45deg, 33%, 98%);
+  background: hsl(250deg, 63%, 47%);
+  width: 100%;
+  border-radius: 5px;
+}
+
+.diversify-trial__btn {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(250deg, 63%, 47%);
+  background: hsl(45deg, 33%, 98%);
+  width: 100%;
+  border-radius: 5px;
+}
+
+.view-portf__btn {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(250deg, 63%, 47%);
+  width: 100%;
+  border: 1px solid hsl(0deg, 1%, 80%);
+  border-radius: 5px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.4;
+}
+body img {
+  max-width: 100%;
+}
+
+.card {
+  padding: 2.25rem 1.5rem;
+  margin: 0 auto;
+  min-width: 19rem;
+  max-width: 35rem;
+  border: 1px solid hsl(0deg, 1%, 80%);
+  border-radius: 5px;
+}
+
+.diversify {
+  padding: 2.25rem 1.5rem;
+  margin: 0 auto;
+  min-width: 19rem;
+  max-width: 35rem;
+  margin-bottom: 3rem;
+}
+.diversify .diversify-content {
+  background: hsl(250deg, 63%, 47%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+}
+.diversify .diversify-content .diversify-text {
+  padding: 1.5rem 2rem;
+}
+.diversify .diversify-content .diversify-text .diversify-content__header {
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+.diversify .diversify-content .diversify-text .diversify-content__description {
+  color: hsl(45deg, 33%, 98%);
+  font-weight: 300;
+  font-size: 1rem;
+}
+.diversify .diversify-content .diversify-image {
+  padding: 1.2rem 2rem 0;
+}
+.diversify .diversify-content .diversify-image div {
+  margin: 0 auto;
+  width: 100%;
+  height: 250px;
+  background: url("/Page Image.69e45a5d.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70%;
+  border-radius: 5px 5px 0 0;
+}
+
+footer {
+  background: hsl(56deg, 68%, 95%);
+  padding: 2.25rem 1.5rem;
+  margin: 0 auto;
+  min-width: 19rem;
+  max-width: 35rem;
+}
+footer .about-fiber__footer .footer-logo__header {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+}
+footer .about-fiber__footer .about-fiber {
+  color: hsl(240deg, 4%, 18%);
+}
+footer .about-fiber__footer .made-in {
+  margin: 1rem 0;
+}
+footer .about-fiber__footer .made-in .love-icon {
+  color: hsl(285deg, 4%, 19%);
+}
+footer .footer-nav {
+  margin: 2rem 0;
+}
+footer .footer-nav .footer-items .nav-header {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 0 1rem;
+}
+footer .footer-nav .footer-items .footer-nav__items {
+  list-style-type: none;
+}
+footer .footer-nav .footer-items .footer-nav__items a {
+  color: hsl(285deg, 4%, 19%);
+  text-decoration: none;
+}
+footer .footer-nav .footer-items .footer-nav__items .footer-nav__item + .footer-nav__item {
+  margin: 0.25rem 0;
+}
+footer .footer-nav .footer-items .footer-nav__items:last-child {
+  margin-bottom: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(56deg, 68%, 95%);
+  padding: 2.25rem 1.5rem;
+  margin: 0 auto;
+  min-width: 19rem;
+  max-width: 35rem;
+}
+header .logo .logo-text {
+  font-weight: 600;
+  font-size: 1rem;
+}
+header .burger .ph-list-bold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+header .desktop-nav {
   display: none;
+}
+
+main {
+  background: hsl(56deg, 68%, 95%);
+  padding: 2.25rem 1.5rem;
+  margin: 0 auto;
+  min-width: 19rem;
+  max-width: 35rem;
+  margin-bottom: 2rem;
+}
+main .intro .intro-hero {
+  margin-top: -3.2rem;
+}
+main .intro .intro-text .rating {
+  display: none;
+}
+main .intro .intro-text .intro-text__header {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+main .intro .intro-text .intro-text__description {
+  color: hsl(285deg, 4%, 19%);
+  font-size: 1rem;
+}
+main .intro .intro-text a.examples {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  text-align: center;
+  color: hsl(250deg, 63%, 47%);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+main .intro .intro-text .intro-perks ul {
+  list-style: none;
+}
+main .intro .intro-text .intro-perks ul li + li {
+  margin: 1rem 0;
+}
+main .intro .intro-text .intro-perks ul li {
+  color: hsl(285deg, 4%, 19%);
+  background: url(/Checkmark.404d3748.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 1.85rem;
+}
+
+.card-slider {
+  padding: 2.25rem 1.5rem;
+  margin: 0 auto;
+  min-width: 19rem;
+  max-width: 35rem;
+  margin-bottom: 2rem;
+}
+.card-slider .card .card-credential {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.card-slider .card .card-credential img {
+  width: 50px;
+  height: 50px;
+}
+.card-slider .card .card-credential .deets_ .username {
+  color: hsl(250deg, 63%, 47%);
+  font-weight: 700;
+}
+.card-slider .card .comment {
+  padding: 0.75rem;
+}
+.card-slider .card + .card {
+  margin: 2.5rem 0 0;
+}
+
+.why-fiber {
+  padding: 2.25rem 1.5rem;
+  margin: 0 auto;
+  min-width: 19rem;
+  max-width: 35rem;
+}
+.why-fiber .why-fiber__intro {
+  color: hsl(250deg, 63%, 47%);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.why-fiber .why-fiber__header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.75rem 0;
+}
+.why-fiber .why-fiber__perks .fiber-perk__item .icon img {
+  width: 40px;
+  height: 40px;
+}
+.why-fiber .why-fiber__perks .fiber-perk__item .fiber-perk__header {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.75rem 0;
+}
+.why-fiber .why-fiber__perks .fiber-perk__item .fiber-perk__description {
+  color: hsl(285deg, 4%, 19%);
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=/main.d9ee62f6.css.map */

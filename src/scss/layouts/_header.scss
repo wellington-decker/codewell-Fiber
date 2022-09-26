@@ -1,0 +1,33 @@
+@use "../base" as *;
+@use "../abstracts" as *;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: map-get($yellow-variant, placebo-yellow);
+  @include container-small;
+
+  .logo {
+    .logo-text {
+      font-weight: map-get($font-weights, semi-bold);
+      font-size: map-get($type-scale-small, 300);
+    }
+  }
+
+  .burger {
+    .ph-list-bold {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: map-get($font-weights, semi-bold);
+      font-size: map-get($type-scale-small, 500);
+    }
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+} 
+
+

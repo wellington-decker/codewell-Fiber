@@ -1,0 +1,37 @@
+@use "../abstracts" as *;
+@use "../globals" as *;
+@use "../base" as *;
+
+.card-slider {
+  @include container-small;
+  margin-bottom: 2rem;
+
+  .card {
+    .card-credential {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .deets_ {
+        .username {
+          color: map-get($blue-variant, royalty);
+          font-weight: map-get($font-weights, bold);
+        }
+      }
+    }
+
+    .comment {
+      padding: 0.75rem;
+    }
+  }
+
+  .card + .card {
+    margin: 2.5rem 0 0;
+  }
+}
