@@ -140,6 +140,7 @@ button {
   min-width: 19rem;
   max-width: 35rem;
   margin-bottom: 3rem;
+  position: relative;
 }
 @media (min-width: 1271px) {
   .diversify {
@@ -191,7 +192,7 @@ button {
   }
 }
 .diversify .diversify-content .diversify-image {
-  padding: 1.2rem 2rem 0;
+  padding: 1.2rem 1.5rem 0;
 }
 @media (min-width: 1271px) {
   .diversify .diversify-content .diversify-image {
@@ -199,19 +200,20 @@ button {
     margin: 0 auto;
   }
 }
-.diversify .diversify-content .diversify-image div {
+.diversify .diversify-content .diversify-image img {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   width: 100%;
-  height: 250px;
+  height: 100%;
   background: url("/Page Image.69e45a5d.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: 70%;
   border-radius: 5px 5px 0 0;
 }
 @media (min-width: 1271px) {
-  .diversify .diversify-content .diversify-image div {
-    height: 100%;
+  .diversify .diversify-content .diversify-image img {
     background-position: center;
   }
 }
