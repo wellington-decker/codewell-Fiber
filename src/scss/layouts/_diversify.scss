@@ -6,13 +6,31 @@
   @include container-small;
   margin-bottom: 3rem;
 
+  @include breakpoint {
+    @include container-big;
+    margin-bottom: 3.5rem;
+  }
+
   .diversify-content {
     background: map-get($blue-variant, royalty);
     color: map-get($white-variant, white_);
     border-radius: 10px;
 
+    @include breakpoint {
+      display: flex;
+      justify-content: space-evenly;
+      height: 350px;
+    }
+
     .diversify-text {
       padding: 1.5rem 2rem;
+      @include breakpoint {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 2.5rem;
+      }
 
       .diversify-content__header {
         font-weight: map-get($font-weights, semi-bold);
@@ -23,11 +41,20 @@
         color: map-get($white-variant, doctor);
         font-weight: map-get($font-weights, light);
         font-size: map-get($type-scale-small, 300);
+        @include breakpoint {
+          max-width: 25rem;
+          margin: 1em 0;
+        }
       }
     }
 
     .diversify-image {
       padding: 1.2rem 2rem 0;
+
+      @include breakpoint {
+        width: 40%;
+        margin: 0 auto;
+      }
 
       div {
         margin: 0 auto;
@@ -38,6 +65,11 @@
         background-repeat: no-repeat;
         background-position: 70%;
         border-radius: 5px 5px 0 0;
+
+        @include breakpoint {
+          height: 100%;
+          background-position: center;
+        }
       }
     }
   }

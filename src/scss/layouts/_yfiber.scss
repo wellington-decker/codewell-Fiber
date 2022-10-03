@@ -4,6 +4,9 @@
 
 .why-fiber {
   @include container-small;
+  @include breakpoint {
+    @include container-big;
+  }
 
   .why-fiber__intro {
     color: map-get($blue-variant, royalty);
@@ -15,6 +18,11 @@
     font-size: map-get($type-scale-small, 700);
     font-weight: map-get($font-weights, bold);
     margin: 0.75rem 0;
+    @include breakpoint {
+      font-size: map-get($type-scale-big, 400);
+      max-width: 35rem;
+      margin: 0 0 2rem;
+    }
   }
 
   .why-fiber__perks {
@@ -34,6 +42,21 @@
         color: map-get($black-variant, dark-charcoal);
         font-size: map-get($type-scale-small, 300);
         margin-bottom: 2rem;
+      }
+    }
+
+    @include breakpoint {
+      display: flex;
+      gap: 20px;
+
+      .fiber-perk__item {
+        flex-basis: 40%;
+
+        .fiber-perk__description {
+          @include breakpoint {
+            max-width: 20rem;
+          }
+        }
       }
     }
   }

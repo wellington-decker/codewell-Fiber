@@ -1,58 +1,81 @@
-@use '../base' as *;
-@use '../abstracts' as *;
-@use '../globals/' as *;
+@use "../base" as *;
+@use "../abstracts" as *;
+@use "../globals/" as *;
 
 footer {
-    background: map-get($yellow-variant , placebo-yellow);
-    @include container-small;
+  background: map-get($yellow-variant, placebo-yellow);
+  @include container-small;
 
-    .about-fiber__footer {
-        .footer-logo__header {
-            font-weight: map-get($font-weights, bold);
-            font-size: map-get($type-scale-small, 300);
-            margin: 0 0 .75rem;
-        }
+  @include breakpoint {
+    display: flex;
+    justify-content: space-between;
+    @include container-big;
+  }
 
-        .about-fiber {
-            color: map-get($black-variant, jet-black);
-             
-        }
+  .about-fiber__footer {
+    .footer-logo__header {
+      font-weight: map-get($font-weights, bold);
+      font-size: map-get($type-scale-small, 300);
+      margin: 0 0 0.75rem;
 
-        .made-in {
-            margin: 1rem 0;
-            .love-icon {
-                color: map-get($black-variant, dark-charcoal);
-            }
-        }
+      @include breakpoint {
+        font-size: map-get($type-scale-small, 400);
+      }
     }
 
-    .footer-nav {
-        margin: 2rem 0;
-        .footer-items {
-            .nav-header {
-                font-weight: map-get($font-weights, bold);
-                font-size: map-get($type-scale-small, 300);
-                margin: 0 0 1rem;
-            }
-
-            .footer-nav__items {
-                list-style-type: none;
-
-                a {
-                    color: map-get($black-variant, dark-charcoal);
-                    text-decoration: none;
-                }
-
-                .footer-nav__item + .footer-nav__item {
-                    margin: .25rem 0;
-
-                }
-
-            }
-
-            .footer-nav__items:last-child {
-                margin-bottom: 1.5rem; 
-            }
-        }
+    .about-fiber {
+      color: map-get($black-variant, jet-black);
+      @include breakpoint {
+        max-width: 25rem;
+      }
     }
+
+    .made-in {
+      margin: 1rem 0;
+      .love-icon {
+        color: map-get($black-variant, dark-charcoal);
+      }
+    }
+  }
+
+  .footer-nav {
+    margin: 1rem 0;
+
+    @include breakpoint {
+      display: flex;
+      justify-content: space-around;
+      width: 60%;
+    }
+
+    .footer-items {
+      .nav-header {
+        font-weight: map-get($font-weights, bold);
+        font-size: map-get($type-scale-small, 300);
+        margin: 0 0 1rem;
+      }
+
+      .footer-nav__items {
+        list-style-type: none;
+
+        a {
+          color: map-get($black-variant, dark-charcoal);
+          text-decoration: none;
+          @include breakpoint {
+            &:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .footer-nav__item + .footer-nav__item {
+          margin: 0.25rem 0;
+        }
+      }
+
+      .footer-nav__items:last-child {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
 }

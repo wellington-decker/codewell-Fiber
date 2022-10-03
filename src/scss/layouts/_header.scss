@@ -1,5 +1,6 @@
 @use "../base" as *;
 @use "../abstracts" as *;
+@use "../globals" as *;
 
 header {
   display: flex;
@@ -7,11 +8,91 @@ header {
   align-items: center;
   background: map-get($yellow-variant, placebo-yellow);
   @include container-small;
+  @include breakpoint {
+    @include container-big;
+  }
 
   .logo {
     .logo-text {
-      font-weight: map-get($font-weights, semi-bold);
-      font-size: map-get($type-scale-small, 300);
+      a {
+        text-decoration: none;
+        font-weight: map-get($font-weights, semi-bold);
+        color: map-get($black-variant, black_);
+        font-size: map-get($type-scale-small, 300);
+      }
+
+      @include breakpoint {
+        font-size: map-get($type-scale-big, 300);
+      }
+    }
+
+    @include breakpoint {
+      .logo-text {
+        font-weight: map-get($font-weights, semi-bold);
+        font-size: map-get($type-scale-small, 400);
+      }
+    }
+  }
+
+  .desktop-nav {
+    display: none;
+    @include breakpoint {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 65%;
+
+      .nav-item {
+        width: 35%;
+
+        .nav-list__items {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          list-style: none;
+
+          .nav-list__item {
+            a {
+              color: map-get($black-variant, black_);
+              font-weight: map-get($font-weights, regular);
+              text-decoration: none;
+
+              @include breakpoint {
+                &:hover {
+                  text-decoration: underline;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .sign_in-up__container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 30%;
+
+        .sign-in {
+          list-style: none;
+
+          .sign-in__item {
+            a {
+              color: map-get($black-variant, black_);
+              font-weight: map-get($font-weights, semi-bold);
+              text-decoration: none;
+
+              @include breakpoint {
+                &:hover {
+                  text-decoration: underline;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 
@@ -21,13 +102,10 @@ header {
       justify-content: center;
       align-items: center;
       font-weight: map-get($font-weights, semi-bold);
-      font-size: map-get($type-scale-small, 500);
+      font-size: map-get($type-scale-small, 600);
+    }
+    @include breakpoint {
+      display: none;
     }
   }
-
-  .desktop-nav {
-    display: none;
-  }
-} 
-
-
+}

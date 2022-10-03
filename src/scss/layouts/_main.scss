@@ -1,41 +1,83 @@
-@use '../base' as *;
-@use '../abstracts/' as *;
-@use '../globals' as *;
-@use '../components/' as *;
+@use "../base" as *;
+@use "../abstracts/" as *;
+@use "../globals" as *;
+@use "../components/" as *;
 
 main {
-  background: map-get($yellow-variant , placebo-yellow);
+  background: map-get($yellow-variant, placebo-yellow);
   @include container-small;
   margin-bottom: 2rem;
 
+  @include breakpoint {
+    @include container-big;
+    margin-bottom: 3.5rem;
+  }
+
   .intro {
+    @include breakpoint {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     .intro-hero {
       margin-top: -3.2rem;
+      @include breakpoint {
+        margin-top: 0;
+        width: 55%;
+        height: 55%;
+      }
     }
 
     .intro-text {
       .rating {
-        display: none;  
+        display: none;
+        @include breakpoint {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 0.75rem;
+        }
       }
-      
+
       .intro-text__header {
         font-size: map-get($type-scale-small, 800);
         font-weight: map-get($font-weights, bold);
+
+        @include breakpoint {
+          font-size: map-get($type-scale-big, 500);
+          max-width: 35rem;
+        }
       }
 
       .intro-text__description {
         color: map-get($black-variant, dark-charcoal);
         font-size: map-get($type-scale-small, 300);
+
+        @include breakpoint {
+          font-size: map-get($type-scale-big, 100);
+          max-width: 35rem;
+        }
       }
 
-      a.examples {
-        display: flex;
-        justify-content: center;
-        font-size: 1rem;
-        text-align: center;
-        color: map-get($blue-variant, royalty);
-        font-weight: map-get($font-weights, bold);
-        margin: 1rem 0;
+      .btn_view-eg {
+        a.examples {
+          display: flex;
+          justify-content: center;
+          font-size: 1rem;
+          text-align: center;
+          color: map-get($blue-variant, royalty);
+          font-weight: map-get($font-weights, bold);
+          margin: 1rem 0;
+        }
+
+        @include breakpoint {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 20px;
+        }
       }
 
       .intro-perks {
@@ -52,7 +94,15 @@ main {
             background-size: contain;
             background-repeat: no-repeat;
             padding-left: 1.85rem;
+          }
+        }
 
+        @include breakpoint {
+          .intro-perk__items {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
           }
         }
       }

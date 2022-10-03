@@ -1,11 +1,19 @@
-@use '../base' as *;
-@use '../globals' as *;
-@use '../abstracts' as *;
-
+@use "../base" as *;
+@use "../globals" as *;
+@use "../abstracts" as *;
 
 .card {
-    @include container-small;
-    border: 1px solid map-get($gray-variant , silver-back);
-    border-radius: 5px;
-}
+  @include card;
+  border: 1px solid map-get($gray-variant, silver-back);
+  border-radius: 5px;
+  padding: 2rem;
 
+  @include breakpoint {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 35rem;
+    gap: 10px;
+    inline-size: 100%;
+  }
+}

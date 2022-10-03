@@ -1,11 +1,27 @@
 @mixin container-small {
-    padding: 2.25rem 1.5rem;
-    margin: 0 auto;
-    min-width: 19rem;
-    max-width: 35rem;
+  padding: 2.25rem 1.5rem;
+  margin: 0 auto;
+  min-width: 19rem;
+  max-width: 35rem;
 }
 
 @mixin container-big {
-    padding: 4rem 7.5rem;
-    margin: 0 auto;
+  padding: 1.5rem 7.5rem;
+  margin: 0 auto;
+  width: 100%;
+  min-width: none;
+  max-width: none;
+}
+
+@mixin container-bg_sign-up {
+  padding: 0 7.5rem;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  min-width: none;
+  max-width: none;
+}
+
+@mixin card {
+  padding: 2rem 1.25rem;
 }

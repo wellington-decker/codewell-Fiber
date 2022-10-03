@@ -10,28 +10,49 @@
 <body>
     <header class="container header">
         <div class="logo">
-            <p class="logo-text">Fiber</p>
+            <p class="logo-text"><a href="#">Fiber</a></p>
         </div>
+
         <div class="desktop-nav">
             <nav class="nav-item">
                 <ul class="nav-list__items">
-                    <li class="nav-list__items"><a href="#">Community</a></li>
-                    <li class="nav-list__items"><a href="#">Pricing</a></li></li>
-                    <li class="nav-list__items"><a href="#">Features </a></li></li>
-                </ul>   
-                
+                    <li class="nav-list__item"><a href="#">Community</a></li>
+                    <li class="nav-list__item"><a href="#">Pricing</a></li></li>
+                    <li class="nav-list__item"><a href="#">Features </a></li></li>
+                </ul>    
             </nav>
             <div class="sign_in-up__container">
                 <ul class="sign-in">
                    <li class="sign-in__item"><a href="#">Sign In</a></li> 
                 </ul>
-                <button type="button" class="sign-up__button">Sign Up</button> 
+                <button type="button" class="sign-up__btn"><a href="sign-up/signup.html">Sign Up</a></button> 
             </div>
         </div>
+
         <div class="burger">
             <i class="ph-list-bold"></i>
         </div>
     </header>
+    <div class="overlay"></div>
+    <div class="mobile-nav">
+        <div class="mobile-nav__container">
+            <ul class="mobile-nav__items">
+                <li class="mobile-nav__item"><a href="#">Community</a></li>
+                <li class="mobile-nav__item"><a href="#">Pricing</a></li></li>
+                <li class="mobile-nav__item"><a href="#">Features</a></li></li>
+            </ul>    
+            <div class="sign_in-up__container">
+                <ul class="sign-in">
+                   <li class="sign-in__item"><a href="#">Sign In</a></li> 
+                </ul>
+                <button type="button" class="mobile-sign-up__btn"><a href="sign-up/signup.html">Sign Up</a></button> 
+            </div>
+        </div>
+        <div class="close-menu">
+            <i class="ph-x-square"></i>
+        </div>
+    </div>
+
     <main>
         <section class="intro">
             <div class="intro-hero">
@@ -53,8 +74,10 @@
                 <p class="intro-text__description">
                     With Fiber, you can setup your own personal porfolio in minutes with dozens of premade, beautiful templates.
                 </p>
-                <button type="button" class="start-trial__btn">Start Free Trial </button>
-                <a href="#"  class="examples">View Examples</a>
+                <div class="btn_view-eg">
+                    <button type="button" class="start-trial__btn">Start Free Trial </button>
+                    <a href="#"  class="examples">View Examples</a>
+                </div>
                 <div class="intro-perks">
                     <ul class="intro-perk__items">
                         <li class="intro-perk__item">No Credit Card Required</li>
@@ -104,12 +127,10 @@
                 </div>
             </div>
         </div>
-        
-
     </section>
 
-    <section class="card-slider">
-        <div class="card">
+    <section class="card-slider snaps-inline">
+        <div class="card" id="sarah">
             <div class="card-credential">
                 <img src="assets/User Avatar.svg" alt="Sarah's photograph">
                 <div class="deets_">
@@ -120,7 +141,7 @@
             <p class="comment"> Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfoliohas attracted a lot of clients and made me more than $100k.</p>
             <button type="button" class="view-portf__btn">View Sarah's Portfolio</button>
         </div>
-        <div class="card">
+        <div class="card" id="matthew">
             <div class="card-credential">
                 <img src="assets/User Avatar 2.svg" alt="Matthew's photograph">
                 <div class="deets_">
@@ -131,8 +152,8 @@
             <p class="comment">I have been getting a lot of leads ever since I used Fiber's premade templates, now I just need to work on my case studies and I'll be ready to go!</p>
             <button type="button" class="view-portf__btn">View Matthew's Portfolio</button>
         </div>
-        <div class="card">
-            <div class="card-credential">
+        <div class="card" id="janice">
+            <div class="card-credential" >
                 <img src="assets/User Avatar 32.svg" alt="Janice's photograph">
                 <div class="deets_">
                     <p class="username">Janice Dave</p>
@@ -180,15 +201,15 @@
             <div class="footer-items"">
                 <p class="nav-header">Portfolios </p>
                 <ul class="footer-nav__items">
-                    <li class="footer-nav__item"><a href="#">Sarah Andrews</a></li>
-                    <li class="footer-nav__item"><a href="#">Matthew Higgins</a></li>
-                    <li class="footer-nav__item"><a href="#">Janice Dave</a></li>
+                    <li class="footer-nav__item"><a href="#sarah">Sarah Andrews</a></li>
+                    <li class="footer-nav__item"><a href="#matthew">Matthew Higgins</a></li>
+                    <li class="footer-nav__item"><a href="#janice">Janice Dave</a></li>
                 </ul>
             </div>
         </div>
     </footer>
    
-
     <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

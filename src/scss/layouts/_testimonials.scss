@@ -6,6 +6,16 @@
   @include container-small;
   margin-bottom: 2rem;
 
+  @include breakpoint {
+    @include container-big;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 45%;
+    // gap: 10rem;
+    overflow-x: auto;
+    margin-bottom: 3.5rem;
+  }
+
   .card {
     .card-credential {
       display: flex;
@@ -28,10 +38,30 @@
 
     .comment {
       padding: 0.75rem;
+      @include breakpoint {
+        max-width: 32rem;
+      }
     }
   }
 
   .card + .card {
     margin: 2.5rem 0 0;
+
+    @include breakpoint {
+      margin: 0;
+    }
   }
+}
+
+.card-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 10rem;
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
 }

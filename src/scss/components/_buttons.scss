@@ -1,5 +1,6 @@
 @use "../abstracts" as *;
 @use "../base" as *;
+@use "../globals" as *;
 
 button {
   display: block;
@@ -10,6 +11,9 @@ button {
   padding: 1rem 2rem;
   border: none;
   outline: none;
+  @include breakpoint {
+    cursor: pointer;
+  }
 }
 
 .start-trial__btn {
@@ -19,6 +23,10 @@ button {
   background: map-get($blue-variant, royalty);
   width: 100%;
   border-radius: 5px;
+
+  @include breakpoint {
+    max-width: 12.5rem;
+  }
 }
 
 .diversify-trial__btn {
@@ -28,6 +36,13 @@ button {
   background: map-get($white-variant, doctor);
   width: 100%;
   border-radius: 5px;
+
+  @include breakpoint {
+    display: flex;
+    // justify-content: flex-start;
+    align-self: flex-start;
+    max-width: 12.5rem;
+  }
 }
 
 .view-portf__btn {
@@ -37,4 +52,46 @@ button {
   width: 100%;
   border: 1px solid map-get($gray-variant, silver-back);
   border-radius: 5px;
+}
+
+.sign-up__btn {
+  font-size: map-get($type-scale-small, 300);
+  font-weight: map-get($font-weights, bold);
+  color: map-get($white-variant, doctor);
+  background: map-get($blue-variant, royalty);
+  border-radius: 5px;
+
+  a {
+    text-decoration: none;
+    color: map-get($white-variant, doctor);
+  }
+}
+
+.create-acct__btn {
+  font-size: map-get($type-scale-small, 300);
+  font-weight: map-get($font-weights, bold);
+  color: map-get($white-variant, doctor);
+  background: map-get($blue-variant, royalty);
+  width: 90%;
+  max-width: 23rem;
+  margin: 0 0 0.5rem;
+  border-radius: 5px;
+
+  @include breakpoint {
+    max-width: 35rem;
+  }
+}
+
+.mobile-sign-up__btn {
+  font-size: map-get($type-scale-big, 100);
+  font-weight: map-get($font-weights, bold);
+  color: map-get($white-variant, doctor);
+  background: map-get($blue-variant, royalty);
+  border-radius: 5px;
+  margin: 0 auto;
+
+  a {
+    text-decoration: none;
+    color: map-get($white-variant, doctor);
+  }
 }
