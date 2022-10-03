@@ -582,7 +582,7 @@ main .intro .intro-text .intro-perks ul li {
   margin: 0 auto;
 }
 .mobile-nav .close-menu .ph-x-square {
-  font-size: 1.75rem;
+  font-size: 2rem;
   color: hsl(285deg, 4%, 19%);
   text-align: center;
 }
